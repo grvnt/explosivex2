@@ -6,11 +6,14 @@ import FAQ from "@/components/FAQ";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
 import Gallery from "@/components/Gallery";
+import { Suspense } from "react";
 
 export default function Home() {
   return (
     <>
-      <Header />
+      <Suspense fallback={<div>Loading...</div>}>
+        <Header />
+      </Suspense>
       <main className="bg-carbon-color bg-carbon-fiber bg-carbon-size bg-carbon-position">
         <Hero />
         <Problem />
