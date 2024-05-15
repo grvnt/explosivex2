@@ -56,11 +56,11 @@ const Header = () => {
             <Image
               src={logo}
               alt={`${config.appName} logo`}
-              className="w-8"
-              placeholder="blur"
+              className="w-12" // Increase the logo size by changing the value of w-8 to w-12
+              // placeholder="blur"
               priority={true}
-              width={32}
-              height={32}
+              width={64}
+              height={64}
             />
             <span className="font-extrabold text-lg">{config.appName}</span>
           </Link>

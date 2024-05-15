@@ -11,10 +11,8 @@ import Footer from "@/components/Footer";
 export default function Home() {
   return (
     <>
-      <Suspense>
-        <Header />
-      </Suspense>
-      <main>
+      <Header />
+      <main className="bg-carbon-color bg-carbon-fiber bg-carbon-size bg-carbon-position">
         <Hero />
         <Problem />
         <FeaturesAccordion />

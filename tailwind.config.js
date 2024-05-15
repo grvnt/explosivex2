@@ -10,6 +10,17 @@ module.exports = {
       backgroundImage: {
         gradient:
           "linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82)",
+        "carbon-fiber":
+          "linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), linear-gradient(to bottom, rgb(8, 8, 8), rgb(32, 32, 32))",
+      },
+      backgroundSize: {
+        "carbon-size": "10px 10px, 10px 10px, 10px 5px",
+      },
+      backgroundPosition: {
+        "carbon-position": "0px 0px, 5px 5px, 0px 0px",
+      },
+      backgroundColor: {
+        "carbon-color": "rgb(32, 32, 32)",
       },
       animation: {
         opacity: "opacity 0.25s ease-in-out",
@@ -59,10 +70,20 @@ module.exports = {
   },
   plugins: [require("daisyui")],
   daisyui: {
-    // Light & dark themes are added by default (it switches automatically based on OS settings)
-    // You can add another theme among the list of 30+
-    // Add "data-theme='theme_name" to any HTML tag to enable the 'theme_name' theme.
-    // https://daisyui.com/
-    themes: ["light", "dark"],
+    themes: [
+      {
+        dark: {
+          ...require("daisyui/src/theming/themes")["dark"],
+          ".btn-primary": {
+            "background-color": "#F06B37",
+            "border-color": "#F06B37",
+          },
+          ".btn-primary:hover": {
+            "background-color": "#B04510",
+            "border-color": "#B04510",
+          },
+        },
+      },
+    ],
   },
 };
