@@ -71,19 +71,8 @@ module.exports = {
   plugins: [require("daisyui")],
   daisyui: {
     themes: [
-      {
-        dark: {
-          ...require("daisyui/src/theming/themes")["dark"],
-          ".btn-primary": {
-            "background-color": "#F06B37",
-            "border-color": "#F06B37",
-          },
-          ".btn-primary:hover": {
-            "background-color": "#B04510",
-            "border-color": "#B04510",
-          },
-        },
-      },
+      "halloween",
+      // other themes...
     ],
   },
 };

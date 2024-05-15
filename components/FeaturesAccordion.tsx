@@ -23,34 +23,11 @@ interface Feature {
 // - alt: The alt text of the image (if type is 'image')
 const features = [
   {
-    title: "Emails",
+    title: "Vehicle Signage",
     description:
-      "Send transactional emails, setup your DNS to avoid spam folder (DKIM, DMARC, SPF in subdomain), and listen to webhook to receive & forward emails",
-    type: "video",
-    path: "https://d3m8mk7e1mf7xn.cloudfront.net/app/newsletter.webm",
-    format: "video/webm",
-    svg: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth={1.5}
-        stroke="currentColor"
-        className="w-6 h-6"
-      >
-        <path
-          strokeLinecap="round"
-          d="M16.5 12a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 10-2.636 6.364M16.5 12V8.25"
-        />
-      </svg>
-    ),
-  },
-  {
-    title: "Payments",
-    description:
-      "Create checkout sessions, handle webhooks to update user's account (subscriptions, one-time payments...) and tips to setup your account & reduce chargebacks",
+      "From simple logos and contact details, to bright and colourful full vehicle wraps. Vehicle wraps can generate between 30,000 to 70,000 daily impressions.",
     type: "image",
-    path: "https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80",
+    path: "/vehicle-wrap.webp",
     alt: "A computer",
     svg: (
       <svg
@@ -70,9 +47,35 @@ const features = [
     ),
   },
   {
-    title: "Authentication",
+    title: "Vinyl Printing",
     description:
-      "Magic links setup, login with Google walkthrough, save user in MongoDB/Supabase, private/protected pages & API calls",
+      "Digital vinyl printing of full colour, laminated and shape cut vinyls including vehicle wraps and PVC and mesh banners.",
+    type: "image",
+    path: "/vinyl-printing.webp",
+    alt: "vinyl samples for printing",
+    svg: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        strokeWidth={1.5}
+        stroke="currentColor"
+        className="w-6 h-6"
+      >
+        <path
+          strokeLinecap="round"
+          d="M16.5 12a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 10-2.636 6.364M16.5 12V8.25"
+        />
+      </svg>
+    ),
+  },
+  {
+    title: "Popup Banners",
+    description:
+      "Popup banners offer a variety of uses; trade show and marketing displays to make your next event a success.",
+    type: "image",
+    path: "/banner.webp",
+    alt: "roll up banner mockup",
     svg: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -91,9 +94,9 @@ const features = [
     ),
   },
   {
-    title: "Style",
+    title: "Stickers & T-Shirts",
     description:
-      "Components, animations & sections (like this features section), 20+ themes with daisyUI, automatic dark mode",
+      "Affordable custom printed t-shirts and clothing. Our stickers are printed using UV cured inks on high quality adhesive-backed vinyl",
     svg: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -216,7 +219,7 @@ const FeaturesAccordion = () => {
     >
       <div className="px-8">
         <h2 className="font-extrabold text-4xl lg:text-6xl tracking-tight mb-12 md:mb-24">
-          All you need to ship your startup fast
+          All you need to increase your brand reach
           <span className="bg-neutral text-neutral-content px-2 md:px-4 ml-1 md:ml-1.5 leading-relaxed whitespace-nowrap">
             and get profitable
           </span>

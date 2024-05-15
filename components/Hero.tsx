@@ -37,7 +37,7 @@ const Hero = () => {
       </div>
       <div className="lg:w-full">
         <Image
-          src="/explosivex2-vinyl-printing.webp"
+          src="/explosive-mockup.png"
           alt="Product Demo"
           className="w-full"
           priority={true}
